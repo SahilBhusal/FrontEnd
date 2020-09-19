@@ -1,0 +1,17 @@
+
+.modal-footer{
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+    margin: 10px 15px 5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	}
+

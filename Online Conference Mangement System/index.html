@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta data -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Jquery library needs to be placed above any reference to Boostrap js -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<script src="js/bootstrap.min.js"></script>
+
+		<title>Online Conference Management System</title>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-grey">
+				<a class="navbar-brand" href="#">
+					<img classs="img-responsive" width="130px" height="" src="img/EasyConferencesLogo.png">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+			  
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+					  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="About Us.html" style="margin-left: 30px;">About Us</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="Contact Us.html" style="margin-left: 30px;">Contact Us</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal" style="margin-left: 450px;">Log In</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#ModalOne" style="margin-left: 30px;">Sign Up</a>
+					</li>
+				  </ul>
+				</div>
+			  </nav>
+
+
+
+			  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body" style="height: auto;">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="inputEmail3" class="control-label">Email</label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="control-label">Password</label>
+								<div class="col-sm-10">
+									<input type="passwoord" class="form-control" id="inputPassword3" placeholder="Password">
+								</div>
+							</div>
+							<div class="form-group">
+							  <div class="modal-footer">
+							  <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: green;">Log In</button>
+							</div>
+							</div>
+							<div class="form-group">
+								<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: green;">Forgot Password?</button>
+							  </div>
+							</div>
+					  </form>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="modal fade" id="ModalOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body" style="height: auto;">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="inputEmail3" class="control-label">Email</label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="control-label">Password</label>
+								<div class="col-sm-10">
+									<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword4" class="control-label">Confirm Password</label>
+								<div class="col-sm-10">
+									<input type="password" class="form-control" id="inputPassword4" placeholder="Confirm Password">
+								</div>
+							</div>
+							<div class="form-group">
+							  <div class="modal-footer">
+							  <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: green;">Sign Up</button>
+							</div>
+							</div>							
+					  </form>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+
+		<div class="container schedule" style="border: azure; ">
+		  
+			<h2 style="text-align:center; margin-top: 250px; margin-bottom: 250px;">Upcoming Schedules</h2>
+		 
+		</div>
+
+		<div class="container footer" style="position: relative;">
+			<footer>
+								
+				<div class="row">
+
+				<div class="footer-copyright text-center py-3" style="margin-right: 400px;">© 2020 Copyright: Easy Conference Management System</div>
+				
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<style>
+				.fa {
+				  padding: 20px;
+				  font-size: 30px;
+				  width: 50px;
+				  text-align: center;
+				  text-decoration: none;
+				  margin: 5px 2px;
+				}
+				
+				.fa:hover {
+					opacity: 0.7;
+				}
+				
+				.fa-facebook {
+				  background: #3B5998;
+				  color: white;
+				}
+				
+				.fa-twitter {
+				  background: #55ACEE;
+				  color: white;
+				}
+				
+				.fa-linkedin {
+				  background: #007bb5;
+				  color: white;
+				}
+				
+				.fa-instagram {
+				  background: #125688;
+				  color: white;
+				}
+				
+				.fa-snapchat-ghost {
+				  background: #fffc00;
+				  color: white;
+				  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+				}
+				
+				.fa-skype {
+				  background: #00aff0;
+				  color: white;
+				}
+				</style>
+
+				<div class="social media link">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-snapchat-ghost"></a>
+				<a href="#" class="fa fa-skype"></a>
+				</div>
+				</div>
+			  </footer>
+		</div>
+	</body>
+</html>
